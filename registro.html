@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Registro</title> 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="body-flex"> 
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logoBoards.png" alt="Boards Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Formulario de Registro</h1>
+    <p class="text-center lead text-muted">Ingresa tus datos en Boards!</p>
+
+    <!-- formulario -->
+    <form id="formulario-registro" novalidate>
+      <!-- nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required>
+        <div class="invalid-feedback">Este campo es obligatorio</div>
+      </div>
+      <!-- usuario -->
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Nombre de usuario</label>
+        <input type="text" class="form-control" id="usuario" required>
+        <div class="invalid-feedback">Ingresa un nombre de usuario válido</div>
+      </div>
+      <!-- email -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Correo electrónico inválido</div>
+      </div>
+      <!-- fecha nacimiento -->
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="fechaNacimiento" required>
+        <div class="invalid-feedback">Debes tener más de 12 años</div>
+      </div>
+      <!-- password -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" required pattern="(?=.*\d)(?=.*[A-Z]).{8,}">
+        <div class="invalid-feedback">Debe tener mínimo 8 caracteres, 1 número y 1 mayúscula</div>
+      </div>
+      <!-- confirmacion pw -->
+      <div class="mb-3">
+        <label for="confirmarPassword" class="form-label">Confirmar contraseña</label>
+        <input type="password" class="form-control" id="confirmarPassword" required>
+        <div class="invalid-feedback">Las contraseñas no coinciden</div>
+      </div>
+      <!-- botones -->
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-light text-black text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Boards - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/sesion.js"></script> 
+  <script src="js/registro.js"></script>
+</body>
+</html>
