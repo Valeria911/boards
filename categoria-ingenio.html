@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juegos de Disparos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="body-flex">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logoBoards.png" alt="Boards Logo" style="height: 40px" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- inicio -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <!-- registro -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                        </li>
+                        <!-- login -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <!-- categorias -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="categoria-medieval.html">Medieval</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="categoria-cartas.html">Cartas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="categoria-ingenio.html">Ingenio</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Juegos de Ingenio</h1>
+
+        <section class="row text-center">
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <img src="img/cortex.png" class="card-img-top" alt="Juego Super Cortex" />
+                    <div class="card-body">
+                        <h2 class="card-title h4">Super Cortex</h2>
+                        <p class="card-text">
+                            ¡Desafía a tu cerebro con un divertido juego que pondrá a prueba tu razonamiento, memoria y
+                            rapidez!
+                        </p>
+                        <button class="btn btn-success agregar-carrito" data-juego="Cortex">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <img src="img/scrabble.jpg" class="card-img-top" alt="Scrabble en español" />
+                    <div class="card-body">
+                        <h2 class="card-title h4">Scrabble</h2>
+                        <p class="card-text">
+                            Edición en español del clásico juego de palabras donde debes formar palabras para ganar
+                            puntos.
+                        </p>
+                        <button class="btn btn-success agregar-carrito" data-juego="Scrabble">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <img src="img/cortex.png" class="card-img-top" alt="Juego Super Cortex" />
+                    <div class="card-body">
+                        <h2 class="card-title h4">Super Cortex</h2>
+                        <p class="card-text">
+                            ¡Desafía a tu cerebro con un divertido juego que pondrá a prueba tu razonamiento, memoria y
+                            rapidez!
+                        </p>
+                        <button class="btn btn-success agregar-carrito" data-juego="Cortex">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <div class="card">
+                    <img src="img/scrabble.jpg" class="card-img-top" alt="Scrabble en español" />
+                    <div class="card-body">
+                        <h2 class="card-title h4">Scrabble</h2>
+                        <p class="card-text">
+                            Edición en español del clásico juego de palabras donde debes formar palabras para ganar
+                            puntos.
+                        </p>
+                        <button class="btn btn-success agregar-carrito" data-juego="Scrabble">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-black text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 Boards - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sesion.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
