@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const index = usuarios.findIndex(u => u.email === email);
     if (index === -1) {
       alert("No existe una cuenta asociada a ese correo. Debes registrarte primero.");
-      window.location.href = "registro.html";;
+      window.location.href = "registro.html";
     }
 
     usuarios[index].password = nueva;
