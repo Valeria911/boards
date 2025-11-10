@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Recuperar Contraseña</title> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="body-flex">
+   <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logoBoards.png" alt="Boards Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Recuperar Contraseña</h1>
+
+    <form id="form-recuperar" novalidate>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico registrado</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Ingresa un correo válido</div>
+      </div>
+      <!-- campo para nueva contraseña -->
+      <div class="mb-3">
+        <label for="nuevaPassword" class="form-label">Nueva contraseña</label>
+        <input type="password" class="form-control" id="nuevaPassword" required>
+        <div class="invalid-feedback">Debe cumplir los requisitos de seguridad</div>
+      </div>
+      <!-- campo para confirmar -->
+      <div class="mb-3">
+        <label for="confirmarPassword" class="form-label">Confirmar nueva contraseña</label>
+        <input type="password" class="form-control" id="confirmarPassword" required>
+        <div class="invalid-feedback">Las contraseñas deben coincidir</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Recuperar</button>
+      <button type="reset" class="btn btn-outline-secondary ms-2">Limpiar</button>
+    </form>
+  </main>
+
+  <footer class="bg-light text-black text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Boards - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/validaciones.js"></script> 
+  <script src="js/recuperar.js"></script> 
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu carrito de compras</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logoBoards.png" alt="Boards Logo" style="height: 40px;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- inicio -->
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+            <!-- registro -->
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+            <!-- login -->
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <!-- categorias -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="categoria-medieval.html">Medieval</a></li>
+                <li><a class="dropdown-item" href="categoria-cartas.html">Cartas</a></li>
+                <li><a class="dropdown-item" href="categoria-ingenio.html">Ingenio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Mi carrito de compras</h1>
+    <div id="contenedor-carrito" class="mb-3"></div>
+    <button id="btn-comprar" class="btn btn-success d-none">Finalizar compra</button>
+  </main>
+
+  <footer class="bg-light text-black text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 Boards - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sesion.js"></script>  
+  <script src="js/carrito.js"></script> 
+</body>
+</html>
